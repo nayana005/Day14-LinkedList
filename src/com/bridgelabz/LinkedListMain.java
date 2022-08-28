@@ -17,15 +17,18 @@ public class LinkedListMain {
         linkedList2.add(30);
         linkedList2.add(70);
         linkedList2.print();
-        System.out.println();
-        System.out.println(linkedList2.popLast());
-        linkedList2.print();
 
         if(linkedList2.search(30) != null){
-        	System.out.println("Element found");
+            System.out.println("Element found");
         }
         else {
-        	System.out.println("Element not found");
+            System.out.println("Element not found");
         }
-	}
+
+        System.out.println(linkedList2.insertAfter(30,40));
+        System.out.println();
+        linkedList2.print();
+
+
+    }
 }

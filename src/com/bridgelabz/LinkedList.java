@@ -72,4 +72,15 @@ public class LinkedList<E> {
 		}
 		return null;
     }
+	
+	public boolean insertAfter(E searchData, E insertData) {
+		Node<E> newNode = new Node<>(insertData);
+		Node<E> searchedNode = search(searchData);
+		if (searchedNode != null) {
+			searchedNode.setNext(newNode);
+			newNode.setNext(tail);
+			return true;
+		}
+		return false;
+	}
 }
