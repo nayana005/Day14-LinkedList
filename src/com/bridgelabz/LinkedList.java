@@ -83,4 +83,24 @@ public class LinkedList<E> {
 		}
 		return false;
 	}
+	
+	public void popNode(E data) {
+		Node<E> searchNode = search(data);
+		Node<E> temp = head;
+		while (temp.getNext() != searchNode) {
+			temp = temp.getNext();
+		}
+		temp.setNext(searchNode.getNext());
+
+	}
+
+	public int size() {
+		int count = 0;
+		Node<E> temp = head;
+		while (temp != null) {
+			count++;
+			temp = temp.getNext();
+		}
+		return count;
+	}
 }
