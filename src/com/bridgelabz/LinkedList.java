@@ -61,4 +61,15 @@ public class LinkedList<E> {
 		tail = temp;
 		return popData;
 	}
+	
+	public Node<E> search(E searchData) {
+		Node<E> temp = head;
+		while (temp != null){
+			if(temp.getKey().equals(searchData)){
+				return temp;
+			}
+			temp = temp.getNext();
+		}
+		return null;
+    }
 }
