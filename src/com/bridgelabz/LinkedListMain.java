@@ -14,6 +14,12 @@ public class LinkedListMain {
         linkedList2.add(30);
         linkedList2.add(70);
         linkedList2.print();
+        
+        LinkedList<Integer> linkedList3 = new LinkedList<>();
+        linkedList3.append(56);
+        linkedList3.append(30);
+        linkedList3.append(70);
+        linkedList3.print();
     }
 }
 	
