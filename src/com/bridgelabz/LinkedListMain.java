@@ -2,43 +2,19 @@ package com.bridgelabz;
 
 public class LinkedListMain {
 	
-	public static void main(String[] args) {
+	public static void main(String[] argS) {
+		
+		System.out.println("Welcome To Linked List Program");
+		
+		OrderedLinkedList<Integer> ascendingList = new OrderedLinkedList<>();
+        ascendingList.adds(56);
+        ascendingList.adds(30);
+        ascendingList.adds(40);
+        ascendingList.adds(70);
+        ascendingList.display();
+        ascendingList.sortNode();
+        ascendingList.display();
 
-		LinkedList<Integer> linkedList1 = new LinkedList<>();
-        linkedList1.push(70);
-//        linkedList1.push(30);
-        linkedList1.push(56);
-        linkedList1.insert(30);
-        System.out.println(linkedList1.pop());
-        linkedList1.print();
-        System.out.println();
-
-        LinkedList<Integer> linkedList2 = new LinkedList<>();
-        linkedList2.add(56);
-        linkedList2.add(30);
-        linkedList2.add(70);
-        linkedList2.print();
-/*        System.out.println();
-        System.out.println(linkedList2.popLast());
-        linkedList2.print();
-*/
-        if(linkedList2.search(30) != null){
-            System.out.println("Element found");
-        }
-        else {
-            System.out.println("Element not found");
-        }
-
-        System.out.println(linkedList2.insertAfter(30,40));
-        System.out.println();
-        linkedList2.print();
-
-        System.out.println();
-        linkedList2.popNode(40);
-        linkedList2.print();
-        System.out.println();
-
-        System.out.println("Size of Array is : " + linkedList2.size());
 
     }
 }
